@@ -22,7 +22,7 @@ element.click()
 element2 = driver.find_element("xpath", "/html/body/a[2]")
 element2.click()
 
-df = pd.read_excel('C:\\My Files\\Coding\\Photo\\test_main.xlsx')
+df = pd.read_excel('test_main.xlsx')
 l = len(df.columns)
 r = len(df)
 
@@ -42,33 +42,6 @@ for i in range(r):
 
     ele5 = driver.find_element("name", "address")
     ele5.send_keys(str(df.iloc[i][4]))
- 
-    # ele6 = driver.find_element("name", "blood_group")
-    # if(len(str(df.iloc[i][5]))==3):
-    #     ele6.send_keys("")
-    # else:
-    #     ele6.send_keys(str(df.iloc[i][5]))
-
-    # ele7 = driver.find_element("name", "contact_person")
-    # if(len(str(df.iloc[i][6]))==3):
-    #     ele7.send_keys("")
-    # else:
-    #     ele7.send_keys(str(df.iloc[i][6])) 
-
-    # ele8 = driver.find_element("name", "contact_number")
-    # if(len(str(df.iloc[i][7]))==3):
-    #     ele8.send_keys("")
-    # else:
-    #     ele8.send_keys(int(float(str(df.iloc[i][7])))) 
-    
-    # ele9 = driver.find_element("name", "permanent_address")
-    # ele9.send_keys(df.iloc[i][8]) 
-
-    # ele10 = driver.find_element("name", "birth_date")
-    # ele10.send_keys(df.iloc[i][9])
-
-    # ele11 = driver.find_element("name", "join_date")
-    # ele11.send_keys(df.iloc[i][10])  
 
     ele12 = driver.find_element("name", "submit")
     ele12.click()
