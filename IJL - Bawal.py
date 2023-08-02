@@ -61,7 +61,7 @@ for i in range(r):
     ele11 = driver.find_element("name", "join_date")
     ele11.send_keys(df.iloc[i][10])  
 
-    ele12 = driver.find_element("name", "submit")
-    ele12.click()
+    # ele12 = driver.find_element("name", "submit")
+    # ele12.click()
 
     print("Uploaded Number: ", i)   
